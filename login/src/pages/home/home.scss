@@ -1,0 +1,20 @@
+page-home {
+  .card {
+    margin-top: calc(25%);
+    visibility: hidden;
+    padding: 25px;
+    transition:  0.45s margin-top ease-out;
+    &.init {
+      visibility: visible;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  page-home {
+  .card {
+      width: calc(50%);
+      margin-left: calc(25%);
+    }
+  }
+}
